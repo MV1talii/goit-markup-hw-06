@@ -59,6 +59,18 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use
+              class="mobile-icon-burg"
+              href="./images/icons.svg#icon-menu-hamburger"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -75,7 +87,7 @@
       </section>
 
       <!-- section_2 -->
-      <section class="section-benefits">
+      <section class="section section-benefits">
         <div class="container">
           <h2 class="visually-hidden">hidden header</h2>
           <ul class="list section-benefits-list">
@@ -132,7 +144,7 @@
       </section>
 
       <!-- section_3 -->
-      <section class="section-produce">
+      <section class="section section-produce">
         <div class="container">
           <h2 class="heading-produce-team">What are we doing</h2>
           <ul class="list section-produce-list">
@@ -154,7 +166,7 @@
       </section>
 
       <!-- section_4 -->
-      <section class="section-team">
+      <section class="section section-team">
         <div class="container">
           <h2 class="heading-produce-team">Our Team</h2>
           <ul class="list team-list">
@@ -403,7 +415,7 @@
       </section>
 
       <!-- section_5 -->
-      <section class="section-customers">
+      <section class="section section-customers">
         <div class="container">
           <h2 class="section-customers-title">Customers</h2>
           <ul class="list section-customers-list">
@@ -455,7 +467,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer hide">
       <div class="container footer-container">
         <div class="footer-logo-box">
           <a class="link logo-footer" href="./index.html"
@@ -652,6 +664,98 @@
       </div>
     </div>
 
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu mob-btn">
+        <svg class="mob-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-burg"></use>
+        </svg>
+      </button>
+
+      <ul class="list mobile-menu">
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="list address-mobile">
+        <li>
+          <a class="link address-list-item" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="link address-list-item" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="list mobile-network-list">
+        <li class="social-links-items">
+          <a class="link footer-social-links" href="">
+            <svg
+              class="social-icons-fotter"
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+            >
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-links-items">
+          <a class="link footer-social-links" href="">
+            <svg
+              class="social-icons-fotter"
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+            >
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-links-items">
+          <a class="link footer-social-links" href="">
+            <svg
+              class="social-icons-fotter"
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+            >
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-links-items">
+          <a href="" class="link footer-social-links">
+            <svg
+              class="social-icons-fotter"
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+            >
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
