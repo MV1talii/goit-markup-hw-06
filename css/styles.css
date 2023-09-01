@@ -710,38 +710,17 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
 /**
   |============================
   | Footer
   |============================
 */
-
-
 .footer {
     background-color: var(--navyblue);
     padding: 97px 0;
 }
 
-.footer-text {
-    color: var(--cloud);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    font-size: 16px;
-    font-weight: 400;
-    height: 72px;
-    max-width: 268px;
-    text-align: left;
-}
-
+.footer-container {}
 
 .footer-logo-box {
     margin-bottom: 72px;
@@ -750,8 +729,6 @@ img {
     align-items: center;
     justify-content: center;
 }
-
-
 
 .logo-footer {
     color: var(--iris);
@@ -770,6 +747,16 @@ img {
     color: var(--cloud);
 }
 
+.footer-text {
+    color: var(--cloud);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    font-weight: 400;
+    height: 72px;
+    max-width: 268px;
+    text-align: left;
+}
 
 .footer-netvork-icon-box {
     margin-bottom: 72px;
@@ -821,6 +808,7 @@ img {
 
 /* footer form */
 
+
 .footer-form-box-text {
     color: var(--white);
     font-family: Roboto;
@@ -831,7 +819,6 @@ img {
     margin-bottom: 16px;
     text-align: center;
 }
-
 
 
 
@@ -853,13 +840,9 @@ img {
 
 }
 
-
-
 .form-input::placeholder {
     color: var(--white);
 }
-
-
 
 .footer-form-button {
     display: flex;
@@ -885,10 +868,12 @@ img {
     border: none;
 
     margin-top: 16px;
-
-
 }
 
+.footer-form-button:hover,
+.footer-form-button:focus {
+    background-color: var(--ocean);
+}
 
 .footer-form-icon {
     fill: var(--white);
@@ -1001,12 +986,6 @@ img {
 
 
 }
-
-.footer-form-button:hover,
-.footer-form-button:focus {
-    background-color: var(--ocean);
-}
-
 
 /* FOOTER finish*/
 
