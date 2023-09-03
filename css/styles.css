@@ -25,6 +25,10 @@
   |============================
 */
 
+input {
+    outline: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--slate);
@@ -450,12 +454,6 @@ address {
 @media screen and (min-width:1158px) {
 
 
-    .team-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-    }
-
     .team-list-item {
         width: calc((100% - 72px) / 4);
     }
@@ -544,25 +542,6 @@ address {
     }
 
 }
-
-
-
-/* .section-customers {
-    padding: 120px 0 120px;
-} */
-
-
-
-/* .section-customers-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    margin-bottom: 120px;
-    color: var(--lightslate);
-} */
-
-
 
 
 /* header */
@@ -770,8 +749,6 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-size: 16px;
-    font-weight: 400;
-    height: 72px;
     max-width: 268px;
     text-align: left;
 }
@@ -816,6 +793,7 @@ address {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .footer-social-links:hover,
 .footer-social-links:focus {
     background-color: var(--green);
@@ -854,13 +832,13 @@ address {
     border-radius: 4px;
     background-color: transparent;
     border: 1px solid var(--white, #FFF);
-    opacity: 0.3;
+
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
 }
 
 .form-input::placeholder {
-    color: var(--white);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-form-button {
@@ -912,11 +890,10 @@ address {
 
     .footer-logo-box {
         align-items: normal;
+
     }
 
-    .footer-text {
-        max-width: 264px;
-    }
+
 
     .footer-netvork-icon-box {
         justify-content: normal;
@@ -924,10 +901,10 @@ address {
     }
 
     .footer-social-network-list {
-        display: flex;
+
         justify-content: center;
         align-items: center;
-        gap: 16px;
+
     }
 
     .footer-form {
@@ -967,16 +944,10 @@ address {
     }
 
     .footer-text {
-        max-width: 268px;
-        text-align: none;
+        max-width: 264px;
     }
 
-    .footer-social-network-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-    }
+
 
     .footer-netvork-icon-box {
         margin-right: 80px;
@@ -1241,7 +1212,7 @@ address {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: calc(100%-36px);
+    width: calc(100% - 36px);
     max-width: 408px;
     min-height: 584px;
     border-radius: 4px;
@@ -1301,10 +1272,12 @@ address {
     margin-bottom: 8px;
 }
 
+
+
 .modal-caption {
     /* текст над формою */
     display: block;
-    width: 360px;
+
     margin-bottom: 16px;
 
     text-align: center;
@@ -1382,11 +1355,9 @@ address {
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: transparent;
-    font-size: 12px;
-    line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
-    font-family: Roboto;
+    font-size: 100%;
+    line-height: 1.15;
 }
 
 .modal-for-comment:focus {
@@ -1449,6 +1420,11 @@ address {
     cursor: pointer;
     border: none;
     margin: 24px auto 0;
+}
+
+.modal-form-btm:hover,
+.modal-form-btm:focus {
+    background-color: var(--ocean);
 }
 
 
